@@ -92,3 +92,22 @@ header {
   font-size: 1.25rem;
   font-weight: 600;
 }
+
+/* MAIN first section*/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about_img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px;
+}
