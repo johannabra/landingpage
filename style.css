@@ -24,7 +24,6 @@ header {
 }
 .logo__img {
   height: 40px;
-  display: block;
 }
 .navbar {
   width: 100%;
@@ -33,7 +32,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 100px;
 }
 .nav__list {
   list-style: none;
@@ -106,8 +105,106 @@ main {
   align-items: center;
 }
 .about_img {
-  width: 40%;
+  max-width: 40%;
   height: auto;
-  border-radius: 10px;
-  margin: 20px;
+  border-radius: 20px;
+  margin: 10px 40px;
+}
+.about_text {
+  margin-right: 80px;
+  max-width: 50%;
+}
+.sub_h3 {
+  margin: 10px 0px;
+  font-weight: 300;
+}
+.about_text p {
+  margin: 30px 0;
+}
+
+.recommendations {
+  background-color: #c0c7f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.recommendations .sub_heading {
+  margin-top: 40px;
+}
+.card_container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+  align-items: baseline;
+}
+.card {
+  display: flex;
+  max-width: 30%;
+  text-align: center;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card p {
+  max-width: 70%;
+}
+.card_img {
+  width: 50%;
+}
+
+.call_to_action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 60px 0px;
+}
+
+.last_chance {
+  font-size: 50px;
+}
+.call_to_action p {
+  margin: 30px 0px;
+}
+
+.big {
+  padding: 50px;
+  font-size: 30px;
+  padding: 10px 30px;
+}
+
+footer {
+  padding-top: 40px;
+  background-color: #c0c7f8;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_logo {
+  height: 100px;
+  width: 100px;
+}
+
+.footer_list {
+  list-style: none;
+}
+.footer_list li {
+  margin: 5px 20px;
+}
+.footer_list a:hover {
+  color: #4c64ff;
+}
+
+@media (max-width: 650px) {
+  .header__content {
+    flex-direction: column;
+    padding: 25px 0px;
+    row-gap: 18px;
+  }
+  .nav__list {
+    column-gap: 20px;
+  }
 }
