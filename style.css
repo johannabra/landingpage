@@ -1,18 +1,26 @@
 /*header och nav*/
 
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@100;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter+Tight:wght@100;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Dela Gothic One", cursive;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Tight", sans-serif;
 }
 
 header {
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/happy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 .logo__img {
   height: 40px;
@@ -21,7 +29,6 @@ header {
 .navbar {
   width: 100%;
   height: 10vh;
-  background-color: black;
   color: white;
   display: flex;
   align-items: center;
@@ -34,15 +41,7 @@ header {
   column-gap: 40px;
   cursor: pointer;
 }
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/rödhårig.jpg");
-  height: 90vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+
 .nav_btn {
   background-color: #4c64ff;
   padding: 5px 20px;
@@ -50,10 +49,46 @@ header {
   border-radius: 1000px;
   color: white;
   transition: all 0.2s;
+  text-transform: uppercase;
 }
-.nav_btn:hover {
-  background-color: rgba(0, 0, 0, 0);
+.nav_btn:hover,
+.application_btn:hover {
+  background-color: rgba(7, 7, 7, 0.2);
   border: 1px solid #4c64ff;
-  color: #4c64ff;
+  color: #98a7f6;
   cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 10%;
+}
+.hero_text {
+  font-weight: 600;
+  margin: 10% 5%;
+  font-size: 50px;
+  max-width: 50%;
+}
+
+.sub_heading {
+  font-weight: 400;
+}
+
+.application_btn {
+  background-color: #4c64ff;
+  padding: 5px 20px;
+  border: 1px solid #4c64ff;
+  border-radius: 1000px;
+  color: white;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  margin: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
