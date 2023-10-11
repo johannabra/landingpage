@@ -26,19 +26,17 @@ header {
   height: 40px;
 }
 .navbar {
-  width: 100%;
-  height: 10vh;
-  color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  align-items: center;
+  margin: 10px;
+}
+nav i {
+  color: white;
+  font-size: 20px;
 }
 .nav__list {
-  list-style: none;
-  display: flex;
-  column-gap: 40px;
-  cursor: pointer;
+  display: none;
 }
 
 .nav_btn {
@@ -71,12 +69,12 @@ header {
 .hero_text {
   font-weight: 600;
   margin: 10% 5%;
-  font-size: 50px;
   max-width: 50%;
 }
 
 .sub_heading {
   font-weight: 400;
+  font-size: 1rem;
 }
 
 .application_btn {
@@ -101,21 +99,22 @@ main {
 
 .about {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .about_img {
-  max-width: 40%;
+  max-width: 95%;
   height: auto;
   border-radius: 20px;
   margin: 10px 40px;
 }
 .about_text {
-  margin-right: 80px;
-  max-width: 50%;
+  margin: 10px;
+  text-align: center;
 }
 .sub_h3 {
-  margin: 10px 0px;
+  font-size: medium;
   font-weight: 300;
 }
 .about_text p {
@@ -134,13 +133,14 @@ main {
 }
 .card_container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 40px 0px;
-  align-items: baseline;
+  align-items: center;
 }
 .card {
   display: flex;
-  max-width: 30%;
+  width: 100%;
   text-align: center;
   padding-bottom: 40px;
   justify-content: center;
@@ -164,15 +164,15 @@ main {
 }
 
 .last_chance {
-  font-size: 50px;
+  font-size: 2rem;
+  text-align: center;
 }
 .call_to_action p {
   margin: 30px 0px;
+  text-align: center;
 }
 
 .big {
-  padding: 50px;
-  font-size: 30px;
   padding: 10px 30px;
 }
 
@@ -184,13 +184,19 @@ footer {
 }
 
 .footer_logo {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 .footer_list {
   list-style: none;
+  font-size: small;
 }
+.address_box h4,
+p {
+  font-size: small;
+}
+
 .footer_list li {
   margin: 5px 20px;
 }
@@ -198,13 +204,90 @@ footer {
   color: #4c64ff;
 }
 
-@media (max-width: 650px) {
-  .header__content {
-    flex-direction: column;
-    padding: 25px 0px;
-    row-gap: 18px;
+@media (min-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
   }
+
   .nav__list {
-    column-gap: 20px;
+    list-style: none;
+    display: flex;
+    column-gap: 40px;
+    cursor: pointer;
+  }
+  .fa-solid {
+    display: none;
+  }
+
+  .hero_text {
+    font-weight: 600;
+    margin: 10% 5%;
+    font-size: 3rem;
+    max-width: 50%;
+  }
+  .sub_heading {
+    font-weight: 400;
+  }
+
+  .about {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about_img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px 40px;
+  }
+  .about_text {
+    text-align: left;
+    margin-right: 80px;
+    max-width: 50%;
+  }
+  .sub_h3 {
+    margin: 10px 0px;
+    font-weight: 300;
+  }
+  .about_text p {
+    margin: 30px 0;
+  }
+
+  .card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0px;
+    align-items: baseline;
+  }
+  .card {
+    display: flex;
+    max-width: 30%;
+    text-align: center;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .last_chance {
+    font-size: 3rem;
+  }
+  .big {
+    padding: 50px;
+    font-size: 30px;
+    padding: 10px 30px;
+  }
+  .footer_list {
+    list-style: none;
+  }
+  .footer_logo {
+    height: 100px;
+    width: 100px;
   }
 }
